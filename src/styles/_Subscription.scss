@@ -1,0 +1,34 @@
+.subscribe{
+    width: 80%;
+    margin: 100px auto;
+    h3{
+        color: #FFF;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    form{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        input[type="email"]{
+            width: 70%;
+            height: 50px;
+            padding: 10px;
+            color: #777;
+            outline: none;
+            border: 0;
+            font-size: 16px;
+        }
+        input[type="submit"]{
+            width: 30%;
+            height: 50px;
+            border: 0;
+            background-color: $mainColor;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}
