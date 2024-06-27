@@ -41,12 +41,6 @@
                             text-transform: uppercase;
                             margin: 0;
                             padding: 0;
-                            span {
-                                display: inline-block;
-                                transform: rotateY(-180deg);
-                                margin-left: -54px;
-                                margin-right: 70px;
-                            }
                         }
                         p {
                             font-size: 15px;
@@ -138,5 +132,35 @@
         &:not(:last-child) {
             margin-bottom: 50px;
         }
+    }
+}
+
+
+// media screen
+@media screen and (max-width: 992px) {
+    .slider{
+        height: 80vh;
+        .slider-wraper{
+            .swiper{
+                .swiper-slide{
+                    .slide{
+                        .info{
+                            h2{
+                                font-size: 35px;
+                            }
+                            p{
+                                width: 85%;
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    right: 20px;
+                }
+            }
+        }
+    }
+    .social{
+        display: none;
     }
 }

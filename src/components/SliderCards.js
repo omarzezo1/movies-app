@@ -26,7 +26,7 @@ const SliderCards = ({ title, data }) => {
             spaceBetween={20}
             breakpoints={{
               350: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 20,
               },
               768: {

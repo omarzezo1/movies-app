@@ -3,3 +3,12 @@
     display: none;
   }
 }
+
+// media screen
+@media screen and (max-width: 992px) {
+  .page{
+    .slider{
+      height: 100vh;
+    }
+  }
+}

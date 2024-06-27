@@ -32,3 +32,20 @@
         }
     }
 }
+
+
+// media screen
+@media screen and (max-width: 992px) {
+    .subscribe{
+        width: 95%;
+        h3{
+            font-size: 16px;
+        }
+        form{
+            width: 95%;
+            input[type="submit"]{
+                font-size: 16px;
+            }
+        }
+    }
+}

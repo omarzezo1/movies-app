@@ -29,3 +29,24 @@
         }
     }
 }
+
+
+// media screen
+@media screen and (max-width: 992px) {
+    .slider-cards{
+        margin-top: 50px;
+        .container{
+            .slider-cards-wraper{
+                .title{
+                    padding: 40px 0 40px 10px;
+                }
+                .swiper{
+                    padding: 0 10px;
+                    .swiper-button-next, .swiper-button-prev{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
