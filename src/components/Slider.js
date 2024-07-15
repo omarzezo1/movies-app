@@ -1,9 +1,6 @@
 import React from "react";
-import Play from "../images/svg/play.svg";
-import Plus from "../images/svg/plus.svg";
-import Facebook from "../images/svg/facebook.svg";
-import Twitter from "../images/svg/twitter.svg";
-import Instagram from "../images/svg/instagram.svg";
+import { Link } from "react-router-dom";
+import {Play, Plus, Facebook, Twitter, Instagram} from "../images/svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +11,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
-import { Link } from "react-router-dom";
 
 const Slider = ({ data, internal }) => {
   return (
@@ -22,7 +18,7 @@ const Slider = ({ data, internal }) => {
       <div className="slider">
         <div className="slider-wraper">
           <Swiper
-            direction={"vertical"}
+            direction={"horizontal"}
             pagination={{
               clickable: true,
             }}

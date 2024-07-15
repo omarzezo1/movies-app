@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from '../images/imgs/logo.png'
-import Search from '../images/svg/search.svg'
-import Bell from '../images/svg/notification.svg'
+import { Logo } from "../images/imgs";
+import { Bell, Search } from "../images/svg";
+import { navLinks } from "../constants";
 
 
 const Navbar = () => {
@@ -15,18 +15,13 @@ const Navbar = () => {
             </a>
           </div>
           <ul className="nav-list">
-            <li className="list-item">
-              <a href="">home</a>
+            {
+              navLinks.map(link=>(
+            <li key={link.name} className="list-item">
+              <a href={link.path}>{link.name}</a>
             </li>
-            <li className="list-item">
-              <a href="">movies</a>
-            </li>
-            <li className="list-item">
-              <a href="">series</a>
-            </li>
-            <li className="list-item">
-              <a href="">my list</a>
-            </li>
+              ))
+            }
           </ul>
           <div className="notification">
             <img src={Search} alt="search"/>
