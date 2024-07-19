@@ -13,15 +13,15 @@ const Home = () => {
 
   const getData = async()=>{
     // get movies list
-    await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=2d1450a575e2dcacc1d2e19b768fdfdf&language=en-US&page=1").then((movies)=>{
+    await axios.get("").then((movies)=>{
       setPopularList(movies.data.results)
     })
     // get top rated list
-    await axios.get("https://api.themoviedb.org/3/movie/top_rated?api_key=2d1450a575e2dcacc1d2e19b768fdfdf&language=en-US&page=1").then((tv)=>{
+    await axios.get("").then((tv)=>{
       setTopRatedList(tv.data.results)
     })
     // get upcoming list
-    await axios.get("https://api.themoviedb.org/3/movie/upcoming?api_key=2d1450a575e2dcacc1d2e19b768fdfdf&language=en-US&page=1").then((tv)=>{
+    await axios.get("").then((tv)=>{
       setUpcomingList(tv.data.results)
     })
   }
